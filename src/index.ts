@@ -1,3 +1,3 @@
-import { yyy } from "./yyy";
+import { zvz } from "./zvz";
 
-export { yyy };
+export { zvz };
