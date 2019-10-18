@@ -1,7 +1,7 @@
-import { yyy } from "../src/yyy";
+import { zvz } from "../src/zvz";
 
-describe("yyy", (): void => {
-    test('should return yyy!!', (): void => {
-        expect(yyy()).toBe("yyy!!");
+describe("zvz", (): void => {
+    test('should return zvz!!', (): void => {
+        expect(zvz()).toBe("zvz!!");
     });
 });

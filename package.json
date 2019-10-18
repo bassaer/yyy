@@ -1,7 +1,7 @@
 {
-    "name": "yyy",
+    "name": "zvz",
     "version": "1.0.0",
-    "description": "yyy library",
+    "description": "zvz library",
     "main": "./dist/index.js",
     "scripts": {
         "dev": "ts-node src/index.ts",
@@ -11,15 +11,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/bassaer/yyy.git"
+        "url": "git+https://github.com/bassaer/zvz.git"
     },
     "keywords": [],
     "author": "Tsubasa Nakayama <app.nakayama@gmail.com> (https://bassaer.github.io/me/)",
     "license": "Apache-2.0",
     "bugs": {
-        "url": "https://github.com/bassaer/yyy/issues"
+        "url": "https://github.com/bassaer/zvz/issues"
     },
-    "homepage": "https://github.com/bassaer/yyy#readme",
+    "homepage": "https://github.com/bassaer/zvz#readme",
     "devDependencies": {
         "@types/jest": "^24.0.19",
         "jest": "^24.9.0",
