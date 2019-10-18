@@ -7,7 +7,7 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
     exit 0
 fi
 
-curr_ver=$(git describe --tags --abbrev=0 || true)
+curr_ver=$(git describe --tags --abbrev=0 2>/dev/null || true)
 next_ver=$(scripts/changelog.sh -v)
 if [ "$curr_ver" = "$next_ver" ]; then
     echo 'skip relsease beacase version is same.'
