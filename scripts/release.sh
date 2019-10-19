@@ -15,7 +15,7 @@ if [ "$curr_ver" = "$next_ver" ]; then
 fi
 
 version=$(scripts/changelog.sh -v)
-desc=$(scripts/changelog.sh -d | tr '\n' '\\n' | tr '"' "\'")
+desc=$(scripts/changelog.sh -d | awk '{ORS="\\n";print;}' | tr '"' "'")
 
 body=$(cat << EOF
 {
