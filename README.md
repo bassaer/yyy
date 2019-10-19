@@ -8,5 +8,5 @@
 ```
 ```
 ❯ node -e 'const lib = require("zvz"); console.log(lib.zvz())'
-zvz!!
+zvz!!!
 ```

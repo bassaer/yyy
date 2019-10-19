@@ -1,6 +1,6 @@
 {
     "name": "zvz",
-    "version": "1.1.1",
+    "version": "1.2.1",
     "description": "zvz library",
     "main": "./dist/index.js",
     "scripts": {
