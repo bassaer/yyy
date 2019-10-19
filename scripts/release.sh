@@ -15,7 +15,7 @@ if [ "$curr_ver" = "$next_ver" ]; then
 fi
 
 version=$(scripts/changelog.sh -v)
-desc=$(scripts/changelog.sh -d)
+desc=$(scripts/changelog.sh -d | tr '\n' '\\n' | tr '"' "\'")
 
 body=$(cat << EOF
 {
@@ -29,5 +29,5 @@ body=$(cat << EOF
 EOF
 )
 
-curl -sSL -X POST -d "$body" -H "Authorization: token $GITHUB_TOKEN" \
+curl -sSLv -X POST -d "$body" -H "Authorization: token $GITHUB_TOKEN" \
     "https://api.github.com/repos/$TRAVIS_REPO_SLUG/releases"
