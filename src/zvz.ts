@@ -1,3 +1,3 @@
 export const zvz = () => {
-    return "zvz!!!";
+    return "zvz!";
 };
