@@ -29,5 +29,5 @@ body=$(cat << EOF
 EOF
 )
 
-curl -sSLv -X POST -d "$body" -H "Authorization: token $GITHUB_TOKEN" \
+curl -sSL -X POST -d "$body" -H "Authorization: token $GITHUB_TOKEN" \
     "https://api.github.com/repos/$TRAVIS_REPO_SLUG/releases"
